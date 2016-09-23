@@ -25,4 +25,8 @@ public class View {
     public static final String NUMBER_HOME = "Number of home";
     public static final String NUMBER_APARTMENT = "Number of apartment if there is";
     public static final String DATE_CREATE = "Please enter the current date. Example: 22.09.2016";
+
+    public static void print(String message) {
+        System.out.println(message);
+    }
 }

@@ -52,11 +52,11 @@ public class Controller {
         name.setLastName(validate(temp, NAME, View.LAST_NAME, scanner));
         phoneBook.setName(name);
 
-        System.out.println(View.COMMENT);
+        View.print(View.COMMENT);
         temp = scanner.nextLine();
         phoneBook.setComment(temp);
 
-        System.out.println(View.GROUP);
+        View.print(View.GROUP);
         temp = scanner.nextLine();
         for ( Group g: Group.values()) {
             if ( temp.equals(g.toString())) {
@@ -98,7 +98,7 @@ public class Controller {
     private String validate(String temp, String regex,
                              String message, Scanner scanner){
         do {
-            System.out.println(message);
+            View.print(message);
             temp = scanner.nextLine();
         } while (!temp.matches(regex));
 
